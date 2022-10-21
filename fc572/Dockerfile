@@ -1,11 +1,10 @@
-FROM python:3.7.8-slim
+FROM python:3.10.7-slim-buster
 
-COPY required.txt
+COPY required.txt required.txt
 RUN pip install -U pip && pip install -r required.txt
 
-COPY ./app /app/fc572
+COPY ./app /app
 COPY ./bin /app/bin
-COPY wsgi.py /app/wsgi.py
 WORKDIR /app
 
 RUN useradd demo

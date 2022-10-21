@@ -1,0 +1,13 @@
+**/.terraform/*
+**/.terraform.*
+
+# .tfstate files
+**/*.tfstate
+**/*.tfstate.*
+
+**/*.tfvars
+**/*.tfplan
+
+**/__pycache__/**
+**/.venv/**
+**/.DS_Store
