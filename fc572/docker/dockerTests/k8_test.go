@@ -27,7 +27,7 @@ func TestKubernetesHelloWorldExample(t *testing.T) {
 
 	// Verify the service is available and get the URL for it.
 	k8s.WaitUntilServiceAvailable(t, options, "bb-entrypoint", 10, 1*time.Second)
-	url := fmt.Sprintf("http://localhost:8080")
+	url := fmt.Sprintf("http://localhost:80")
 	// service := k8s.GetService(t, options, "hello-world-service")
 	// url := fmt.Sprintf("http://%s", k8s.GetServiceEndpoint(t, options, service, 5000))
 

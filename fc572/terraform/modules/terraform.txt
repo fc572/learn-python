@@ -1,0 +1,27 @@
+2023-06-13T18:27:26.380+0100 [INFO]  Terraform version: 1.4.2
+2023-06-13T18:27:26.380+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.18.0
+2023-06-13T18:27:26.381+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.16.2
+2023-06-13T18:27:26.381+0100 [DEBUG] using github.com/hashicorp/terraform-config-inspect v0.0.0-20210209133302-4fd17a0faac2
+2023-06-13T18:27:26.381+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.0
+2023-06-13T18:27:26.381+0100 [DEBUG] using github.com/zclconf/go-cty v1.12.1
+2023-06-13T18:27:26.381+0100 [INFO]  Go runtime version: go1.19.6
+2023-06-13T18:27:26.381+0100 [INFO]  CLI args: []string{"terraform", "apply", "--auto-approve"}
+2023-06-13T18:27:26.381+0100 [TRACE] Stdout is a terminal of width 231
+2023-06-13T18:27:26.381+0100 [TRACE] Stderr is a terminal of width 231
+2023-06-13T18:27:26.381+0100 [TRACE] Stdin is a terminal
+2023-06-13T18:27:26.381+0100 [DEBUG] Attempting to open CLI config file: /Users/francescocalvino/.terraformrc
+2023-06-13T18:27:26.381+0100 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2023-06-13T18:27:26.383+0100 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2023-06-13T18:27:26.383+0100 [DEBUG] ignoring non-existing provider search directory /Users/francescocalvino/.terraform.d/plugins
+2023-06-13T18:27:26.384+0100 [DEBUG] ignoring non-existing provider search directory /Users/francescocalvino/Library/Application Support/io.terraform/plugins
+2023-06-13T18:27:26.384+0100 [DEBUG] ignoring non-existing provider search directory /Library/Application Support/io.terraform/plugins
+2023-06-13T18:27:26.385+0100 [INFO]  CLI command args: []string{"apply", "--auto-approve"}
+2023-06-13T18:27:26.388+0100 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2023-06-13T18:27:26.388+0100 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2023-06-13T18:27:26.388+0100 [DEBUG] New state was assigned lineage "dcc437a2-7322-d717-53f2-a06eea9ddedb"
+2023-06-13T18:27:26.388+0100 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2023-06-13T18:27:26.388+0100 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2023-06-13T18:27:26.389+0100 [DEBUG] checking for provisioner in "."
+2023-06-13T18:27:26.392+0100 [DEBUG] checking for provisioner in "/usr/local/bin"
+2023-06-13T18:27:26.392+0100 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2023-06-13T18:27:26.396+0100 [INFO]  backend/local: starting Apply operation

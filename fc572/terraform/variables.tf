@@ -10,10 +10,15 @@ variable "profile" {
 
 variable "cluster_name" {
   description = "The name of the cluster. It is a param so that terratest can create multiple cluster for parallel testing"
-  default = "fc572-cluster"
+  default     = "fc572-cluster"
 }
 
 variable "load_balancer_name" {
   description = "The load balancer name"
-  default = "fc572-lb-tf" # Naming our load balancer
+  default     = "fc572-lb-tf" # Naming our load balancer
+}
+
+variable "name" {
+  description = "a name"
+  default     = "fc-logs" # Naming our load balancer
 }

@@ -4,8 +4,16 @@ resource "aws_ecs_task_definition" "fc572_first_task" {
   [
     {
       "name": "fc572-first-task",
-      "image": "${aws_ecr_repository.fc572-ecr-repo.repository_url}",
+      "image": "${aws_ecr_repository.fc572-ecr-repo.repository_url}:latest",
       "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "${aws_cloudwatch_log_group.log-group.id}",
+          "awslogs-region": "${var.region}",
+          "awslogs-stream-prefix": "${var.name}"
+        }
+      },
       "portMappings": [
         {
           "containerPort": 8080,
